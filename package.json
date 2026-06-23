@@ -1,0 +1,58 @@
+{
+	"name": "@dullaz/captcha",
+	"version": "0.1.0",
+	"type": "module",
+	"description": "Bot-protection (CAPTCHA) for EmDash with a pluggable provider abstraction (Cloudflare Turnstile first). Verifies challenge tokens server-side; consumed by the storefront SSR layer.",
+	"author": "Abdullah Hasan <dev@dullaz.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/Dullaz/emdash-captcha#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Dullaz/emdash-captcha.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Dullaz/emdash-captcha/issues"
+	},
+	"keywords": [
+		"emdash",
+		"emdash-plugin",
+		"captcha",
+		"turnstile",
+		"bot-protection",
+		"cloudflare",
+		"astro",
+		"cms"
+	],
+	"exports": {
+		".": "./src/index.ts",
+		"./admin": "./src/admin.tsx",
+		"./shared": "./src/constants.ts"
+	},
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc -p tsconfig.json --noEmit"
+	},
+	"peerDependencies": {
+		"@emdash-cms/admin": "^0.18.0",
+		"emdash": "^0.18.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@emdash-cms/admin": "^0.18.0",
+		"@types/node": "^22.0.0",
+		"astro": "^6.3.0",
+		"emdash": "^0.18.0",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
+		"typescript": "^5.6.0"
+	}
+}
