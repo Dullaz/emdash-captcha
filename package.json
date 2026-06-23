@@ -1,6 +1,6 @@
 {
 	"name": "@dullaz/captcha",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"description": "Bot-protection (CAPTCHA) for EmDash with a pluggable provider abstraction (Cloudflare Turnstile first). Verifies challenge tokens server-side; consumed by the storefront SSR layer.",
 	"author": "Abdullah Hasan <dev@dullaz.com>",
